@@ -15,6 +15,7 @@
 		B9DF7F362C6F55F80073D772 /* mv_much_betterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF7F352C6F55F80073D772 /* mv_much_betterTests.swift */; };
 		B9DF7F402C6F55F80073D772 /* mv_much_betterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF7F3F2C6F55F80073D772 /* mv_much_betterUITests.swift */; };
 		B9DF7F422C6F55F80073D772 /* mv_much_betterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF7F412C6F55F80073D772 /* mv_much_betterUITestsLaunchTests.swift */; };
+		B9DF7F512C6FB64B0073D772 /* FinanceFeature in Frameworks */ = {isa = PBXBuildFile; productRef = B9DF7F502C6FB64B0073D772 /* FinanceFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B9DF7F3B2C6F55F80073D772 /* mv-much-betterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mv-much-betterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DF7F3F2C6F55F80073D772 /* mv_much_betterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mv_much_betterUITests.swift; sourceTree = "<group>"; };
 		B9DF7F412C6F55F80073D772 /* mv_much_betterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mv_much_betterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9DF7F4E2C6F70930073D772 /* MV-packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "MV-packages"; path = "../MV-packages"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DF7F512C6FB64B0073D772 /* FinanceFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +79,12 @@
 		B9DF7F162C6F55F20073D772 = {
 			isa = PBXGroup;
 			children = (
+				B9DF7F4E2C6F70930073D772 /* MV-packages */,
 				B9DF7F212C6F55F20073D772 /* mv-much-better */,
 				B9DF7F342C6F55F80073D772 /* mv-much-betterTests */,
 				B9DF7F3E2C6F55F80073D772 /* mv-much-betterUITests */,
 				B9DF7F202C6F55F20073D772 /* Products */,
+				B9DF7F4F2C6FB64B0073D772 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +135,13 @@
 			path = "mv-much-betterUITests";
 			sourceTree = "<group>";
 		};
+		B9DF7F4F2C6FB64B0073D772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +158,9 @@
 			dependencies = (
 			);
 			name = "mv-much-better";
+			packageProductDependencies = (
+				B9DF7F502C6FB64B0073D772 /* FinanceFeature */,
+			);
 			productName = "mv-much-better";
 			productReference = B9DF7F1F2C6F55F20073D772 /* mv-much-better.app */;
 			productType = "com.apple.product-type.application";
@@ -592,6 +607,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9DF7F502C6FB64B0073D772 /* FinanceFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FinanceFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DF7F172C6F55F20073D772 /* Project object */;
 }
